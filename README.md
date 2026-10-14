@@ -43,13 +43,13 @@ cybershield-dashboard/
 
    ```bash
    git clone https://github.com/amitjha-100/cybershield-dashboard.git
-   ```
+   
 
 2. Open the project folder:
 
    ```bash
    cd cybershield-dashboard
-   ```
+   
 
 3. Open `index.html` in your browser.
 
