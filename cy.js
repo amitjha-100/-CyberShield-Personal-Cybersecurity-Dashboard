@@ -8,7 +8,7 @@ const urlForm = document.querySelector("#url-form");
 const urlInput = document.querySelector("#url-input");
 const urlResult = document.querySelector("#url-result");
 
-// Display results safely without inserting user input as HTML.
+
 function showResult(container, title, messages, level) {
   container.replaceChildren();
 
@@ -24,7 +24,7 @@ function showResult(container, title, messages, level) {
   });
 }
 
-// Password strength checker
+
 passwordForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -109,7 +109,6 @@ passwordForm.addEventListener("submit", (event) => {
   showResult(passwordResult, title, feedback, level);
 });
 
-// Show or hide the password field
 togglePassword.addEventListener("click", () => {
   const isHidden = passwordInput.type === "password";
 
@@ -128,7 +127,7 @@ urlForm.addEventListener("submit", (event) => {
     return;
   }
 
-  // Require an explicit web scheme; do not silently assume one.
+  
   if (!/^https?:\/\//i.test(rawValue)) {
     showResult(
       urlResult,
@@ -182,7 +181,7 @@ urlForm.addEventListener("submit", (event) => {
   }
 
   if (hostname.includes("xn--")) {
-    // The preceding check already covers encoded domain names.
+    
   }
 
   const shorteners = [
@@ -219,9 +218,7 @@ urlForm.addEventListener("submit", (event) => {
       "warning"
     );
   }
-});
-
-// Update the active navigation item when clicked.
+})
 document.querySelectorAll(".nav-link").forEach((link) => {
   link.addEventListener("click", () => {
     document.querySelectorAll(".nav-link").forEach((item) => {
