@@ -3,7 +3,7 @@
 # 🛡️ CyberShield — Personal Security Dashboard
 
 CyberShield is a beginner-friendly cybersecurity awareness dashboard built
-using HTML, CSS, and vanilla JavaScript.
+using HTML, CSS, and JavaScript.
 
 The project combines front-end web development with basic cybersecurity
 education in a clean, responsive interface.
