@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CyberShield personal cybersecurity awareness dashboard">
+  <title>CyberShield | Security Dashboard</title>
+  <link rel="stylesheet" href="cy.css">
+  <script src="cy.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#home">
+      <span class="brand-icon">⬡</span>
+      CyberShield
+    </a>
+
+    <p class="nav-label">WORKSPACE</p>
+    <nav>
+      <a class="nav-link active" href="#home">▦ &nbsp; Overview</a>
+      <a class="nav-link" href="#password">🔑 &nbsp; Password Check</a>
+      <a class="nav-link" href="#url-check">⌁ &nbsp; URL Check</a>
+      <a class="nav-link" href="#tips">◈ &nbsp; Security Tips</a>
+    </nav>
+
+    <div class="sidebar-note">
+      <span class="status-dot"></span>
+      <strong>Local Demo</strong>
+      <p>Your inputs stay in this browser. No security API is connected.</p>
+    </div>
+  </aside>
+
+  <main class="main-content" id="home">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">PERSONAL SECURITY CENTER</p>
+        <h1>Security Overview</h1>
+      </div>
+      <span class="demo-badge">● DEMO MODE</span>
+    </header>
+
+    <section class="welcome">
+      <div>
+        <p class="eyebrow">YOUR DIGITAL SAFETY SPACE</p>
+        <h2>Stay alert. Stay secure.</h2>
+        <p>Practice good security habits with your personal dashboard.</p>
+        <a class="button primary" href="#password">Check a Password →</a>
+      </div>
+      <div class="shield-art" aria-hidden="true">⬡</div>
+    </section>
+
+    <section class="stats-grid" aria-label="Dashboard features">
+      <article class="stat-card">
+        <span class="stat-icon">🔑</span>
+        <p>Password tool</p>
+        <h3>Strength Check</h3>
+        <a href="#password">Open tool →</a>
+      </article>
+
+      <article class="stat-card">
+        <span class="stat-icon">⌁</span>
+        <p>Link safety</p>
+        <h3>URL Review</h3>
+        <a href="#url-check">Open tool →</a>
+      </article>
+
+      <article class="stat-card">
+        <span class="stat-icon">◈</span>
+        <p>Learn daily</p>
+        <h3>Security Tips</h3>
+        <a href="#tips">Read tips →</a>
+      </article>
+    </section>
+
+    <section class="tool-grid">
+      <article class="panel" id="password">
+        <div class="panel-heading">
+          <span class="panel-icon">🔑</span>
+          <div>
+            <h2>Password Strength Checker</h2>
+            <p>Evaluate a password locally in your browser.</p>
+          </div>
+        </div>
+
+        <form id="password-form">
+          <label for="password-input">Enter a test password</label>
+          <div class="input-row">
+            <input
+              id="password-input"
+              type="password"
+              placeholder="Try a sample password"
+              autocomplete="off"
+              required
+            >
+            <button class="button secondary" type="button" id="toggle-password">
+              Show
+            </button>
+          </div>
+          <button class="button primary full" type="submit">
+            Check Strength
+          </button>
+        </form>
+
+        <div class="result-box" id="password-result" aria-live="polite">
+          <p>Your result will appear here.</p>
+        </div>
+        <p class="small-note">
+          Demo only. Avoid entering real or reused passwords.
+          This tool does not check breached-password databases.
+        </p>
+      </article>
+
+      <article class="panel" id="url-check">
+        <div class="panel-heading">
+          <span class="panel-icon">⌁</span>
+          <div>
+            <h2>Suspicious URL Checker</h2>
+            <p>Look for common warning signs in a link.</p>
+          </div>
+        </div>
+
+        <form id="url-form">
+          <label for="url-input">Paste a URL</label>
+          <input
+            id="url-input"
+            type="text"
+            placeholder="https://example.com"
+            autocomplete="off"
+            required
+          >
+          <button class="button primary full" type="submit">
+            Review URL
+          </button>
+        </form>
+
+        <div class="result-box" id="url-result" aria-live="polite">
+          <p>Your URL review will appear here.</p>
+        </div>
+        <p class="small-note">
+          This is a basic heuristic, not a reputation check.
+          A suspicious link can still pass these checks.
+        </p>
+      </article>
+    </section>
+
+    <section class="panel tips-panel" id="tips">
+      <div class="panel-heading">
+        <span class="panel-icon">◈</span>
+        <div>
+          <h2>Security Habits to Remember</h2>
+          <p>Small habits can make a meaningful difference.</p>
+        </div>
+      </div>
+
+      <div class="tips-grid">
+        <article class="tip">
+          <span>01</span>
+          <h3>Use unique passwords</h3>
+          <p>Use a password manager to generate and store unique passwords.</p>
+        </article>
+        <article class="tip">
+          <span>02</span>
+          <h3>Enable MFA</h3>
+          <p>Use multi-factor authentication, preferably phishing-resistant options.</p>
+        </article>
+        <article class="tip">
+          <span>03</span>
+          <h3>Verify links</h3>
+          <p>Check the actual domain and confirm unexpected requests independently.</p>
+        </article>
+        <article class="tip">
+          <span>04</span>
+          <h3>Update your devices</h3>
+          <p>Install operating system, browser, and application security updates.</p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <p>CyberShield · Beginner portfolio project</p>
+      <p>Educational tool only — not a professional security scanner.</p>
+    </footer>
+  </main>
+</body>
+</html>
