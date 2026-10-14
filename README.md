@@ -78,7 +78,7 @@ This project is intended for learning and demonstration.
 
 **Amit jha **
 
-Front-end Development | Cybersecurity Learning
+Front-end Development | Cybersecurity Ethical Hacking 
 
 ## License
 
