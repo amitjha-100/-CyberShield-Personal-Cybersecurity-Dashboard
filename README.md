@@ -42,7 +42,7 @@ cybershield-dashboard/
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/YOUR-USERNAME/cybershield-dashboard.git
+   git clone https://github.com/amitjha-100/cybershield-dashboard.git
    ```
 
 2. Open the project folder:
